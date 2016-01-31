@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your ip-adress color</title>
+</head>
+<body>
+  <script type="text/javascript" src="https://www.l2.io/ip.js?var=userip"></script>
+  <script>
+   var ip = userip.split("."); 
+   document.body.style.backgroundColor = "rgba("+ip[0]+", "+ip[1]+", "+ip[2]+", ."+ip[3]+")";
+  </script>
+</body>
+</html>
